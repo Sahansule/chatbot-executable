@@ -1,5 +1,5 @@
 name: vesacons-cv-chatbot
-version: 0.0.1
+version: 1.0.0
 scenarioName: cv_chatbot
 
 inputs:
