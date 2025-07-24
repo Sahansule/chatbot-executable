@@ -1,0 +1,24 @@
+name: vesacons-cv-chatbot
+version: 1.0.0
+scenarioName: cv_chatbot
+
+inputs:
+  - name: resume_text
+    type: string
+    description: CV’den çıkarılmış düz metin
+    required: true
+  - name: prompt
+    type: string
+    description: Prompt Template’ten gelen prompt
+    required: true
+
+outputs:
+  - name: response
+    type: string
+    description: Azure OpenAI modelinin verdiği analiz cevabı
+
+image: docker.io/sahansule/vesacons-cv-chatbot:1.0.0
+
+command: ["python", "main.py"]
+
+port: 8080
